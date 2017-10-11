@@ -1,28 +1,18 @@
-# TripnamaFrontend
+# universal-cli-starter
+A simple starter for Angular Universal using Angular CLI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
+## clone the repository
+`git clone https://github.com/m98/universal-cli-starter.git`
 
-## Development server
+## Install dependencies
+In the cloned directory, run:
+`npm install`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Build and serve:
+- `ng serve`: Angular CLI serve command
+- `ng build --prod`: Angular CLI production build command
+- `npm run build:universal`: Build the client and server application. For running the server, open the `dist` directory (`cd dist`) and run the `server.js` by using `node server.js`, it will serve the application on `localhost:8000`
+- `npm run serve:universal`: first build the client and server application, then runs it.
 
-## Code scaffolding
+**To learn how to add server-side rendering support to your application, [read this tutorial](https://medium.com/@kermani/angular-server-side-rendering-using-angular-cli-bbde0c0eefe9) on Medium**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -1,0 +1,59 @@
+@import '../../styles/global.scss';
+agm-map {
+    height: 450px;
+}
+
+.mapdiv {
+    position: relative;
+    border-bottom: 2px solid $accent;
+    .map-container {
+        height: 500px;
+    }
+}
+
+.markerWindow {
+    span {
+        display: block;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+}
+
+// #mapsearchBar {
+//     position: absolute;
+//     top: 8%;
+//     width: 50%;
+//     left: 25%;
+//     background: rgba(39, 39, 39, 0.64);
+//     font-size: 18px;
+//     border-radius: 2px;
+//     padding: 0px 0px;
+//     font-weight: 500;
+//     color: #fff;
+//     /deep/ .mat-icon {
+//         font-size: 29px;
+//         color: #fff;
+//     }
+//     /deep/ .mat-input-underline {
+//         bottom: 0px;
+//     }
+//     /deep/ .mat-form-field-wrapper {
+//         padding: 5px 0!important;
+//     }
+//     /deep/ .mat-form-field-infix {
+//         border-top: none;
+//         padding-left: 10px;
+//         padding-right: 10px;
+//         .mat-form-field-placeholder-wrapper {
+//             text-align: center;
+//             .mat-form-field-placeholder {
+//                 color: white;
+//             }
+//         }
+//     }
+//     /deep/ .mat-input-suffix {
+//         padding-right: 10px;
+//     }
+// }

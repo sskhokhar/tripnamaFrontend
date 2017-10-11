@@ -1,0 +1,43 @@
+<div class="mapdiv">
+    <!-- <agm-map [latitude]="30.31734969999999" [longitude]="69.85640179999996" [zoom]=5 [streetViewControl]=false>
+        <agm-marker [latitude]="lat" [longitude]="lng">
+            <agm-info-window [disableAutoPan]="true">
+                <div class="markerWindow">
+                    <span>Lahore</span>
+                    <a md-button routerLink="." color="warn">Join</a>
+                </div>
+            </agm-info-window>
+        </agm-marker>
+        <agm-marker [latitude]="34.9054657" [longitude]="73.6401129">
+            <agm-info-window [disableAutoPan]="true">
+                <div class="markerWindow">
+                    <span>Naran Kaghan</span>
+                    <a md-button routerLink="." color="warn">Join</a>
+                </div>
+            </agm-info-window>
+        </agm-marker>
+        <agm-marker [latitude]="36.3103055" [longitude]="74.6143249">
+            <agm-info-window [disableAutoPan]="true">
+                <div class="markerWindow">
+                    <span>Hunza Valley</span>
+                    <a md-button routerLink="." color="warn">Join</a>
+                </div>
+            </agm-info-window>
+        </agm-marker>
+        <agm-marker [latitude]="33.9423383" [longitude]="73.2079728">
+            <agm-info-window [disableAutoPan]="true">
+                <div class="markerWindow">
+                    <span>Azad Kashmir</span>
+                    <a md-button routerLink="." color="warn">Join</a>
+                </div>
+            </agm-info-window>
+        </agm-marker>
+    </agm-map> -->
+    <x-map #xmap [Options]="_options">
+        <x-map-marker [Latitude]="lat" [Longitude]="lng" [Title]="'My Marker'">
+            <x-info-box [DisableAutoPan]="true" [Title]="'My InfoBox'" [Description]="'Hi, this is the content of the <strong>info window</strong>. It is your responsibility to implement functionality such as close, etc...'">
+                <x-info-box-action [Label]="'Click Me'" (ActionClicked)="_click()"></x-info-box-action>
+            </x-info-box>
+        </x-map-marker>
+    </x-map>
+</div>

@@ -1,0 +1,488 @@
+<div class="main-content container-fluid make-my-plan">
+    <div class="top-bar">
+        <div *ngIf="isCreateTrip;then createTripBtn else cancelTripBtn"></div>
+        <ng-template #createTripBtn>
+            <button mat-raised-button color="accent" (click)="cancelTrip()">Cancel</button>
+        </ng-template>
+        <ng-template #cancelTripBtn>
+            <button mat-raised-button color="accent" (click)="createTrip()">Create New</button>
+        </ng-template>
+    </div>
+    <div class="trips row" [hidden]="isCreateTrip">
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+        <div class="col-lg-3 tripCard">
+            <mat-card>
+                <mat-card-header>
+                    <div mat-card-avatar class="tripCard-header"></div>
+                    <mat-card-title>Shiba Inu</mat-card-title>
+                    <mat-card-subtitle>40 Days Trip</mat-card-subtitle>
+                </mat-card-header>
+
+                <img mat-card-image src="https://static2.tripoto.com/media/filter/nl/img/128243/TripDocument/1433665302236.jpg">
+                <div class="trip-card-title">
+                    <span class="title">Hunza Valley</span>
+                    <ul>
+                        <li>
+                            <button mat-raised-button color="accent">Join</button>
+                        </li>
+                        <li>
+                            <button mat-raised-button color="accent">Copy</button>
+                        </li>
+                    </ul>
+                </div>
+                <mat-card-actions>
+                    <ul>
+                        <li>
+                            <span>
+                            <mat-icon>remove_red_eye</mat-icon>
+                          360</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon>group</mat-icon>
+                              20</span>
+                        </li>
+                        <li>
+                            <span>
+                                <mat-icon><i class="material-icons">star_rate</i></mat-icon>
+                              4.5</span>
+                        </li>
+                    </ul>
+                </mat-card-actions>
+            </mat-card>
+            <span class="card-bookmark"><mat-icon><i class="material-icons" style="color:#BCAAA4;">bookmark</i></mat-icon></span>
+        </div>
+
+    </div>
+    <div class="create-itinery" [hidden]="!isCreateTrip">
+        <div class="row">
+            <form [formGroup]="itineryForm">
+                <div class="col-lg-3">
+                    <mat-form-field class="trip-title" color="accent">
+                        <input formControlName="title" matInput placeholder="Trip Title" required>
+                    </mat-form-field>
+                    <table class="fullwidth" cellspacing="0">
+                        <tr>
+                            <td>
+                                <mat-form-field class="fullwidth" color="accent">
+                                    <input matInput formControlName="countryInp" type="text" placeholder="Country" [matAutocomplete]="countryInp" required>
+                                    <mat-spinner *ngIf="countrySearch" matSuffix color="warn" class="searchSpinner">
+                                    </mat-spinner>
+                                </mat-form-field>
+                                <mat-autocomplete (optionSelected)="selectCountry($event)" #countryInp="matAutocomplete" [displayWith]="displayCountry">
+                                    <mat-option *ngFor="let country of countries" [value]="country">
+                                        {{ country.title }}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </td>
+                            <td>
+                                <!-- <mat-form-field class="fullwidth" color="accent">
+                                    <input matInput formControlName="stateInp" type="text" placeholder="State">
+                                </mat-form-field> -->
+                                <mat-form-field class="fullwidth" color="accent">
+                                    <input matInput formControlName="stateInp" type="text" placeholder="State" [matAutocomplete]="stateInp" required>
+
+                                </mat-form-field>
+                                <mat-autocomplete (optionSelected)="selectState($event)" #stateInp="matAutocomplete" [displayWith]="displayState">
+                                    <mat-option *ngFor="let state of filteredStates | async" [value]="state">
+                                        {{ state.title }}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </td>
+                            <td>
+                                <!-- <mat-form-field class="fullwidth" color="accent">
+                                    <input matInput formControlName="cityInp" type="text" placeholder="City">
+                                </mat-form-field> -->
+                                <mat-form-field class="fullwidth" color="accent">
+                                    <input matInput formControlName="cityInp" type="text" placeholder="city" [matAutocomplete]="cityInp" required>
+
+                                </mat-form-field>
+                                <mat-autocomplete (optionSelected)="selectCity($event)" #cityInp="matAutocomplete" [displayWith]="displayCity">
+                                    <mat-option *ngFor="let city of filteredCities | async" [value]="city">
+                                        {{ city.title }}
+                                    </mat-option>
+                                </mat-autocomplete>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="fullwidth" color="accent">
+                                    <input matInput formControlName="persons" type="number" placeholder="Persons" min="1">
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="fullwidth" color="accent">
+                                    <input [min]="minDate" formControlName="fromDate" matInput [matDatepicker]="fromDate" (dateChange)="changeDate($event)" placeholder="From Date">
+                                    <mat-datepicker-toggle matSuffix [for]="fromDate"></mat-datepicker-toggle>
+                                    <mat-datepicker #fromDate touchUi="true"></mat-datepicker>
+                                </mat-form-field>
+                            </td>
+                            <td>
+                                <mat-form-field class="fullwidth" color="accent">
+                                    <input [min]="itinery.startDate" formControlName="toDate" matInput [matDatepicker]="toDate" placeholder="To Date">
+                                    <mat-datepicker-toggle matSuffix [for]="toDate"></mat-datepicker-toggle>
+                                    <mat-datepicker #toDate touchUi="true"></mat-datepicker>
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="trip-image mat-elevation-z3">
+                        <div *ngIf="image;then imgBtn else simpleBtn"></div>
+                        <ng-template #simpleBtn>
+                            <button mat-button (click)="uploadImage()">Add Image</button>
+                        </ng-template>
+                        <ng-template #imgBtn>
+                            <button mat-button [ngStyle]="{'background-image': 'url(' + image + ')'}" (click)="uploadImage()">Change Image</button>
+                        </ng-template>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <mat-vertical-stepper class="mat-elevation-z3" formArrayName="plans">
+                        <mat-step *ngFor="let plan of itinery.plans; let $index=index" label="Day {{$index+1}} - {{plan.name}} on {{getDate($index) | date:'fullDate'}}" formGroupName="{{$index}}" stepControl="plans.get($index)">
+                            <mat-form-field color="accent">
+                                <input matInput placeholder="Day Name" formControlName="title">
+                            </mat-form-field>
+                            <div class="activityAccordion">
+                                <mat-accordion formArrayName="activities">
+                                    <mat-expansion-panel *ngFor="let activity of plan.activities; let aIndex=index; trackBy:aIndex" [expanded]="step===aIndex" hideToggle="true" formGroupName="{{aIndex}}" fromControl="activities.get([aIndex])">
+                                        <mat-expansion-panel-header>
+                                            <mat-panel-title>
+                                                Activity {{aIndex+1}}
+                                            </mat-panel-title>
+                                            <mat-panel-description>
+                                                {{activity.title}}
+                                            </mat-panel-description>
+                                        </mat-expansion-panel-header>
+                                        <div class="col-lg-6">
+                                            <table aria-colspan="0 " class="fullwidth">
+                                                <tr>
+                                                    <td>
+                                                        <mat-form-field color="accent" class="fullwidth">
+                                                            <input matInput placeholder="Activity Name" formControlName="title" required>
+                                                        </mat-form-field>
+                                                    </td>
+                                                    <td>
+                                                        at
+                                                    </td>
+                                                    <td>
+                                                        <!-- <mat-form-field color="accent " class="fullwidth ">
+                                                    <input matInput placeholder="Location " [(ngModel)]="activity.location.title ">
+                                                </mat-form-field> -->
+                                                        <mat-form-field class="fullwidth" color="accent">
+                                                            <input matInput type="text" placeholder="Location" [matAutocomplete]="locationInp" formControlName="location" required>
+
+                                                        </mat-form-field>
+                                                        <mat-autocomplete (optionSelected)="selectLocation($event,aIndex,$index) " #locationInp="matAutocomplete" [displayWith]="displayState">
+                                                            <mat-option *ngFor="let location of locations" [value]="location">
+                                                                {{ location.title }}
+                                                            </mat-option>
+                                                        </mat-autocomplete>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <owl-date-time type="timer " placeHolder="HH:MM " dateFormat="HH:mm " dataType='string'></owl-date-time>
+                                                    </td>
+                                                    <td>to</td>
+                                                    <td>
+                                                        <owl-date-time type="timer " placeHolder="HH:MM " dateFormat="HH:mm " dataType='string'></owl-date-time>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- <mat-form-field class="activityTags" color="accent">
+                                                <mat-chip-list matPrefix #chipList>
+                                                    <mat-chip *ngFor="let tag of activity.tags; let tIndex = index" [removable]="true" (remove)="removeTag(tIndex,aIndex,$index)">
+                                                        {{tag}}
+                                                        <mat-icon matChipRemove>cancel</mat-icon>
+                                                    </mat-chip>
+                                                </mat-chip-list>
+                                                <input matInput placeholder="Activity Tags" [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="tagInputCodes" />
+                                            </mat-form-field> -->
+                                            <mat-form-field class="tagsInput fullwidth" color="accent">
+                                                <mat-chip-list shouldPlaceholderFloat=false matPrefix #chipList>
+                                                    <mat-chip *ngFor="let tag of activity.tags; let tIndex = index; trackBy:tIndex" [removable]="removable" (remove)="removeTag(tIndex,aIndex,$index)">
+                                                        {{tag}}
+                                                        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                                                    </mat-chip>
+                                                </mat-chip-list>
+                                                <input matInput placeholder="Activity Tags" [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="addTag($event, aIndex,$index)" required />
+                                                <mat-hint align="start"><strong>Max: 5</strong> </mat-hint>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-lg-6" style=" border-left: 1px solid #d6d6d6;">
+                                            <div class="nearbyMap mat-elevation-z5">
+                                                <app-map></app-map>
+                                            </div>
+                                        </div>
+                                        <mat-action-row>
+                                            <button (click)="addActivity($index)" matTooltip="Add Activity" mat-mini-fab color="accent" matTooltipPosition="left">
+                                                <mat-icon>add</mat-icon>
+                                              </button>
+                                        </mat-action-row>
+                                    </mat-expansion-panel>
+                                </mat-accordion>
+                            </div>
+                            <div class="addDay">
+                                <button mat-raised-button color="accent" class="pull-right" (click)="addDay()">Add Another Day</button>
+                                <div class="clearfix"></div>
+                            </div>
+                        </mat-step>
+                    </mat-vertical-stepper>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

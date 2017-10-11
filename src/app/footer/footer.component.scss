@@ -1,0 +1,7 @@
+@import '../../styles/global.scss';
+footer {
+    background: $primary;
+    min-height: 150px;
+    border-top: 1px solid $accent;
+    text-align: center;
+}

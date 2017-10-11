@@ -1,0 +1,77 @@
+@import '../../styles/global.scss';
+#mainTabs {
+    background: rgb(252, 252, 252);
+    padding-bottom: 35px;
+    /deep/ .mat-tab-label {
+        font-size: 16px;
+    }
+    /deep/ .mat-tab-label-active {
+        border-bottom: 4px solid $accent;
+    }
+}
+
+.tripCard {
+    padding: 10px 10px;
+    position: relative;
+    /deep/ .mat-card-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    img {
+        width: 460;
+    }
+    .tripCard-header {
+        background: url('https://vignette.wikia.nocookie.net/sote-rp/images/c/c4/User-placeholder.png/revision/latest/scale-to-width-down/480?cb=20150624004222');
+        background-size: cover;
+    }
+    .card-bookmark {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        .mat-icon i {
+            font-size: 30px;
+        }
+    }
+    .trip-card-title {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        left: 0;
+        text-align: center;
+        span {
+            display: block;
+            margin: 50% 0;
+            font-size: 40px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5)
+        }
+    }
+    .mat-card-actions {
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        .mat-icon {
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+        div {
+            div:nth-child(2) {
+                text-align: center;
+            }
+            div:nth-child(3) {
+                text-align: right;
+                .mat-icon {
+                    i {
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-home {
+    margin: 15px 0;
+}

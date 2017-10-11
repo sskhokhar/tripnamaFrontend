@@ -1,0 +1,130 @@
+@import '../../styles/global.scss';
+.top-bar {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.tripCard {
+    padding: 10px;
+    /deep/ .mat-card-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    .tripCard-header {
+        background: url('https://vignette.wikia.nocookie.net/sote-rp/images/c/c4/User-placeholder.png/revision/latest/scale-to-width-down/480?cb=20150624004222');
+        background-size: cover;
+    }
+    .card-bookmark {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        .mat-icon i {
+            font-size: 30px;
+        }
+    }
+    .trip-card-title {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        left: 0;
+        text-align: center;
+        .title {
+            display: block;
+            margin: 50% 0;
+            font-size: 32px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5)
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 78%;
+            right: 3%;
+            li {
+                display: inline-block;
+            }
+            li:nth-child(2) {
+                margin-left: 5px;
+            }
+        }
+    }
+    .mat-card-actions {
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        .mat-icon {
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin: 0 25px;
+            }
+            li:nth-child(3) {
+                .mat-icon {
+                    i {
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.trips {
+    overflow: hidden;
+}
+
+.create-itinery {
+    .trip-title {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .trip-image {
+        height: 365px;
+        .mat-button {
+            width: 100%;
+            height: 100%;
+            background: $primary;
+            background-position: center center;
+            /deep/ .mat-button-wrapper {
+                display: block;
+                color: white;
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .activityAccordion {
+        margin-top: 5px;
+    }
+    table {
+        td {
+            padding: 0 3px;
+        }
+    }
+    .searchSpinner {
+        width: 15px!important;
+        height: 15px!important;
+        /deep/ svg {
+            width: 15px!important;
+            height: 15px!important;
+        }
+    }
+    .nearbyMap {
+        /deep/ .mapdiv {
+            .map-container {
+                height: 350px!important;
+            }
+        }
+    }
+    .addDay {
+        padding: 20px 0 0 0;
+    }
+}

@@ -1,0 +1,44 @@
+@import './styles/bootstrap.css';
+@import './styles/bootstrap-theme.css';
+@import '~@angular/material/theming';
+@import './styles/global.scss';
+@import '~ng-pick-datetime/assets/style/picker.min.css';
+@include mat-core();
+$theme-primary: mat-palette($mat-grey, A200);
+$theme-accent: mat-palette($mat-brown, A200);
+$theme-warn: mat-palette($mat-red, A200);
+$tripnama-theme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
+@include angular-material-theme($tripnama-theme);
+html {
+    height: 100%;
+}
+
+body {
+    background: $background;
+    height: 100%
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: initial;
+}
+
+.main-content {
+    min-height: 600px;
+}
+
+.tagsInput {
+    margin: 20px 0;
+    /deep/ .mat-form-field-placeholder-wrapper {
+        font-size: 18px;
+    }
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}

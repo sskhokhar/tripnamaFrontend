@@ -1,0 +1,21 @@
+<form class="image-search-form" [formGroup]="imageSearchForm">
+    <mat-form-field color="accent" class="form-field">
+        <input matInput placeholder="Search" formControlName="searchText" autocomplete="off">
+        <button mat-icon-button matSuffix [disabled]="!imageSearchForm.valid" (click)="search()"><mat-icon >search</mat-icon></button>
+    </mat-form-field>
+</form>
+<div class="search-images">
+    <div *ngIf="searchStarted; then progress else images"></div>
+    <ng-template #progress>
+        <mat-spinner color="warn"></mat-spinner>
+    </ng-template>
+    <ng-template #images>
+        <ul>
+            <li *ngFor="let url of _images">
+                <img [ngClass]="{selected : isSelected(url)}" (click)="selectImage($event,url)" src="{{url}}" alt="">
+            </li>
+        </ul>
+    </ng-template>
+
+</div>
+<button mat-raised-button color="accent" class="pull-right insertbtn" [disabled]="!selectedImage" (click)="insertImage()">Insert</button>

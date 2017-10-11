@@ -1,14 +1,16 @@
-import { AppPage } from './app.po';
+import { UniversalCliPage } from './app.po';
 
-describe('tripnama-frontend App', () => {
-  let page: AppPage;
+describe('universal-cli App', () => {
+  let page: UniversalCliPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new UniversalCliPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display welcome message', done => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    page.getParagraphText()
+      .then(msg => expect(msg).toEqual('Welcome to app!!'))
+      .then(done, done.fail);
   });
 });
